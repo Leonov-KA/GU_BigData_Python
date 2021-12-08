@@ -3,22 +3,22 @@
 Числа запрашивать у пользователя, предусмотреть обработку ситуации деления на ноль.
 """
 
-def my_function():
-    while 1 == 1:
-        try:
-            a = float(input("Делимое: "))
-            b = float(input("Делитель: "))
-            c = c = a / b
-        except ValueError:
-            print("Введите число")
-        except ZeroDivisionError:
-            print("Нельзя делить на ноль")
-        else:
-            print(f"Частное: {c}")
-            break
-#    return c    # Не получилось использовать функцию "return", для добавления парметра "с"
-
-qwe = my_function()
+# def my_function():
+#     while 1 == 1:
+#         try:
+#             a = float(input("Делимое: "))
+#             b = float(input("Делитель: "))
+#             c = c = a / b
+#         except ValueError:
+#             print("Введите число")
+#         except ZeroDivisionError:
+#             print("Нельзя делить на ноль")
+#         else:
+#             print(f"Частное: {c}")
+#             break
+# #    return c    # Не получилось использовать функцию "return", для добавления парметра "с"
+#
+# qwe = my_function()
 
 """
 2) Реализовать функцию, принимающую несколько параметров, описывающих данные пользователя:
@@ -26,19 +26,19 @@ qwe = my_function()
 как именованные аргументы. Реализовать вывод данных о пользователе одной строкой.
 """
 
-
-def user_data(first_name, last_name, year_of_birth, city_of_residence, email, phone):
-    print(f"имя: {first_name}, фамилия: {last_name}, год рождения: {year_of_birth},"
-          f"город проживания: {city_of_residence}, email: {email}, телефон: {phone}")
-
-# Почему если оставить мало строк меду заданной функцие и местом её вызова,
-# тект ниже начинает подчёркиваться жёлтой волнистой линией?
-
-
-user_data(first_name=input("Укажите своё имя: "), last_name=input("Укажите свою фамилию: "),
-          year_of_birth=input("Укажите свою дату рождения: "),
-          city_of_residence=input("Укажите город проживания: "),
-          email=input("Укажите свой email: "), phone=input("Укажите свой номер телефона: "))
+#
+# def user_data(first_name, last_name, year_of_birth, city_of_residence, email, phone):
+#     print(f"имя: {first_name}, фамилия: {last_name}, год рождения: {year_of_birth},"
+#           f"город проживания: {city_of_residence}, email: {email}, телефон: {phone}")
+#
+# # Почему если оставить мало строк меду заданной функцие и местом её вызова,
+# # тект ниже начинает подчёркиваться жёлтой волнистой линией?
+#
+#
+# user_data(first_name=input("Укажите своё имя: "), last_name=input("Укажите свою фамилию: "),
+#           year_of_birth=input("Укажите свою дату рождения: "),
+#           city_of_residence=input("Укажите город проживания: "),
+#           email=input("Укажите свой email: "), phone=input("Укажите свой номер телефона: "))
 
 """
 3) Реализовать функцию my_func(), которая принимает три позиционных аргумента,
@@ -46,14 +46,14 @@ user_data(first_name=input("Укажите своё имя: "), last_name=input(
 """
 
 
-def my_func(x, y, z):   # -> object: PyCharm подсказывает сделат такое дополнение, но не очень понимаю что это значит.
-    a = [x, y, z]
-    a.sort()
-    a.pop(0)
-    print(sum(a))
-
-
-my_func(100, 20, 300)
+# def my_func(x, y, z):   # -> object: PyCharm подсказывает сделат такое дополнение, но не очень понимаю что это значит.
+#     a = [x, y, z]
+#     a.sort()
+#     a.pop(0)
+#     print(sum(a))
+#
+#
+# my_func(100, 20, 300)
 
 
 """
@@ -65,23 +65,23 @@ my_func(100, 20, 300)
 """
 
 
-def my_func(x, y):
-    while x or y:       #Как корректно задать условия для цыкла?
-        try:
-            c = y       #Как сделать корректую проверку, являеться ли "Y" целым числом?
-            if x <= 0 or y >= 0 or int(c) != y:
-                1/0
-        except Exception:
-            print("Некорректные данные")
-            x = float(input("Введите положительное число X: "))
-            y = float(input("Введите целое отрицательное число Y: "))
-        else:
-            c = x ** y
-            print(f'{x} в степени {int(y)} равняется {c}')
-            break
-
-
-my_func(100, -0.5)
+# def my_func(x, y):
+#     while x or y:       #Как корректно задать условия для цыкла?
+#         try:
+#             c = y       #Как сделать корректую проверку, являеться ли "Y" целым числом?
+#             if x <= 0 or y >= 0 or int(c) != y:
+#                 1/0
+#         except Exception:
+#             print("Некорректные данные")
+#             x = float(input("Введите положительное число X: "))
+#             y = float(input("Введите целое отрицательное число Y: "))
+#         else:
+#             c = x ** y
+#             print(f'{x} в степени {int(y)} равняется {c}')
+#             break
+#
+#
+# my_func(100, -0.5)
 
 
 """
